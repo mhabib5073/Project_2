@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head></head>
+<title></title>
+<body>
+    <h1 style="text-align: center;">Student Info</h1>
+    <table border="3" align="center">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Address</th>
+        </tr>
+        {% for stu in qs %}
+        <tr>
+        <td>{{stu.sid}}</td>
+        <td>{{stu.sname}}</td>
+        <td>{{stu.roll}}</td>
+        <td>{{stu.saddress}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
